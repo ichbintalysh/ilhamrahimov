@@ -1,0 +1,1 @@
+window.az={nav_home:'Ana Səhifə',nav_services:'Xidmətlər',nav_contact:'Əlaqə',hero_title:'Müasir bizneslər üçün etibarlı IT infrastrukturu',hero_description:'Korporativ IT həlləri.'};

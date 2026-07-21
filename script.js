@@ -1,0 +1,1 @@
+document.addEventListener('DOMContentLoaded',()=>{if(typeof AOS!=='undefined'){AOS.init()}const b=document.querySelector('.progress-bar');window.addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-window.innerHeight;b.style.width=((scrollY/h)*100)+'%';});});

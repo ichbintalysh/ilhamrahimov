@@ -1,0 +1,1 @@
+window.tr={nav_home:'Ana Sayfa',nav_services:'Hizmetler',nav_contact:'İletişim',hero_title:'Modern işletmeler için güvenilir BT altyapısı',hero_description:'Kurumsal BT çözümleri.'};

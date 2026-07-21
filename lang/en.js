@@ -1,0 +1,1 @@
+window.en={nav_home:'Home',nav_services:'Services',nav_contact:'Contact',hero_title:'Reliable IT Infrastructure',hero_description:'Enterprise IT Solutions.'};
