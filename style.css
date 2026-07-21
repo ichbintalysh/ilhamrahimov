@@ -1,0 +1,177 @@
+/* ==========================================================================
+   Enterprise IT Solutions - Foundation CSS
+   ========================================================================== */
+
+:root{
+  --primary:#2563EB;
+  --secondary:#3B82F6;
+  --accent:#22C55E;
+  --bg:#070B14;
+  --surface:#111827;
+  --surface-2:#1F2937;
+  --text:#F8FAFC;
+  --muted:#94A3B8;
+  --border:rgba(255,255,255,.08);
+  --radius:18px;
+  --shadow:0 20px 50px rgba(0,0,0,.35);
+  --container:1200px;
+}
+
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:"Poppins",sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  overflow-x:hidden;
+  line-height:1.6;
+}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+ul{list-style:none}
+
+.container{
+  width:min(100% - 40px,var(--container));
+  margin-inline:auto;
+}
+
+.progress-bar{
+  position:fixed;
+  top:0;left:0;
+  width:0;height:4px;
+  background:var(--primary);
+  z-index:9999;
+}
+
+header{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:1000;
+  backdrop-filter:blur(14px);
+  background:rgba(7,11,20,.72);
+  border-bottom:1px solid var(--border);
+}
+header .container{
+  height:78px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-weight:800;
+  font-size:1.5rem;
+  color:var(--primary);
+}
+
+.nav-links{
+  display:flex;
+  gap:2rem;
+}
+.nav-links a{
+  color:var(--muted);
+  transition:.25s;
+}
+.nav-links a:hover{
+  color:var(--text);
+}
+
+.header-right{
+  display:flex;
+  align-items:center;
+  gap:1rem;
+}
+
+.language-switcher{
+  display:flex;
+  gap:.35rem;
+}
+.language-switcher button{
+  background:transparent;
+  color:var(--muted);
+  border:1px solid var(--border);
+  padding:.45rem .7rem;
+  border-radius:10px;
+  cursor:pointer;
+}
+.language-switcher .active{
+  background:var(--primary);
+  color:#fff;
+  border-color:var(--primary);
+}
+
+.menu-btn{
+  display:none;
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:140px 0 80px;
+  background:
+    radial-gradient(circle at top right, rgba(37,99,235,.18), transparent 30%),
+    radial-gradient(circle at bottom left, rgba(59,130,246,.12), transparent 35%);
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:4rem;
+  align-items:center;
+}
+.hero-badge{
+  display:inline-block;
+  background:rgba(37,99,235,.12);
+  color:#9ec2ff;
+  border:1px solid rgba(37,99,235,.25);
+  padding:.45rem .8rem;
+  border-radius:999px;
+  margin-bottom:1rem;
+}
+.hero h1{
+  font-size:3.8rem;
+  line-height:1.1;
+  margin-bottom:1.2rem;
+}
+.hero p{
+  color:var(--muted);
+  font-size:1.1rem;
+  max-width:650px;
+}
+.hero-buttons{
+  display:flex;
+  gap:1rem;
+  margin-top:2rem;
+}
+.btn,.btn-outline{
+  padding:1rem 1.6rem;
+  border-radius:14px;
+  font-weight:600;
+}
+.btn{
+  background:var(--primary);
+  color:#fff;
+}
+.btn:hover{background:var(--secondary)}
+.btn-outline{
+  border:2px solid var(--primary);
+}
+
+section{padding:100px 0}
+
+footer{
+  border-top:1px solid var(--border);
+  padding:2rem 0;
+  text-align:center;
+  color:var(--muted);
+}
+
+@media (max-width:992px){
+  .nav-links{display:none}
+  .menu-btn{display:block}
+  .hero-grid{grid-template-columns:1fr;text-align:center}
+  .hero-buttons{justify-content:center;flex-wrap:wrap}
+  .hero h1{font-size:2.6rem}
+}
